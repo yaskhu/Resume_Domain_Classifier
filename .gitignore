@@ -1,0 +1,4 @@
+IOMP@/
+__pycache__/
+*.pyc
+.env
