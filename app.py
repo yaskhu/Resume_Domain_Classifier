@@ -94,12 +94,8 @@ async def analyze(
     common_skills = domain_skills & resume_skills_set
     match_score = (len(common_skills) / len(domain_skills) * 100) if domain_skills else 0
 
-    if match_score > 60:
-        final_domain = selected_domain
-        final_confidence = match_score
-    else:
-        final_domain = predicted_domain
-        final_confidence = model_confidence
+    final_domain = selected_domain
+    final_confidence = match_score
 
     decision = get_decision(match_score)
 
