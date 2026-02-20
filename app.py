@@ -102,9 +102,12 @@ async def analyze(
     os.remove(temp_file_path)
 
     return {
-        "final_domain": final_domain,
-        "confidence": f"{final_confidence:.1f}%",
-        "skill_match": f"{match_score:.1f}%",
-        "decision": decision,
-        "skills": list(common_skills)
-    }
+    "selected_domain": selected_domain,
+    "predicted_domain": predicted_domain,
+    "model_confidence": f"{model_confidence:.1f}%",
+    "final_domain": final_domain,
+    "confidence": f"{final_confidence:.1f}%",
+    "skill_match": f"{match_score:.1f}%",
+    "decision": decision,
+    "skills": list(common_skills)
+}
