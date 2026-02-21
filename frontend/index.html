@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Screening AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Resume Screening AI</h1>
+    <p class="subtitle">Scan and match talent instantly</p>
+
+    <div class="card">
+
+      <input type="file" id="resumeFile">
+      
+      <select id="domainSelect">
+        <option value="">Select Domain</option>
+        <option>Python Developer</option>
+        <option>Data Science</option>
+        <option>Java Developer</option>
+        <option>HR</option>
+        <option>Testing</option>
+        <option>Network Security Engineer</option>
+        <option>Database</option>
+        <option>Mechanical Engineer</option>
+        <option>Civil Engineer</option>
+        <option>Electrical Engineering</option>
+        <option>Sales</option>
+        <option>Blockchain</option>
+        <option>ETL Developer</option>
+        <option>Hadoop</option>
+      </select>
+
+      <button onclick="analyzeResume()">Analyze Resume</button>
+
+    </div>
+
+    <div class="results" id="results" style="display:none;">
+
+      <div class="stat">
+        <h2 id="skillMatch">0%</h2>
+        <p>Skill Match</p>
+      </div>
+
+      <div class="stat">
+        <h2 id="confidence">0%</h2>
+        <p>Model Confidence</p>
+      </div>
+
+      <div class="stat">
+        <h2 id="finalScore">0%</h2>
+        <p>Final Score</p>
+      </div>
+
+    </div>
+
+    <div class="details" id="details"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

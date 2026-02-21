@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  display: inline-block;
+}
+
+input, select {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  width: 300px;
+}
+
+button {
+  padding: 12px 30px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 120px;
+}
+
+.stat h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.details {
+  margin-top: 40px;
+  font-size: 18px;
+}
